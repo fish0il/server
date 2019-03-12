@@ -94,16 +94,16 @@ Feature: app-files
 #    Then I see that the current section is "Favorites"
 #    Then I see that the file list contains a file named "welcome.txt"
 
-  Scenario: show favorites for a second time
-    Given I am logged in
-    And I open the "Favorites" section
-    And I see that the current section is "Favorites"
-    And I open the "All files" section
-    And I see that the current section is "All files"
-    And I mark "welcome.txt" as favorite
-    When I open the "Favorites" section
-    Then I see that the current section is "Favorites"
-    Then I see that the file list contains a file named "welcome.txt"
+#  Scenario: show favorites for a second time
+#    Given I am logged in
+#    And I open the "Favorites" section
+#    And I see that the current section is "Favorites"
+#    And I open the "All files" section
+#    And I see that the current section is "All files"
+#    And I mark "welcome.txt" as favorite
+#    When I open the "Favorites" section
+#    Then I see that the current section is "Favorites"
+#    Then I see that the file list contains a file named "welcome.txt"
 
   Scenario: show shares
     Given I am logged in
