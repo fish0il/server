@@ -105,7 +105,7 @@ class SmbTest extends \Test\Files\Storage\Storage {
 		$changes = [];
 		$count = 0;
 		// wait up to 10 seconds for incoming changes
-		while (count($changes) >= 3 || $count > 10) {
+		while (count($changes) < 3 && $count < 10) {
 			$changes = array_merge($changes, $notifyHandler->getChanges());
 			$count++;
 			sleep(1);
