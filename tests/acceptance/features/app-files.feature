@@ -130,16 +130,16 @@ Feature: app-files
     Then I see that the current section is "Deleted files"
     Then I see that the file list contains a file named "welcome.txt"
 
-  Scenario: show deleted files for a second time
-    Given I am logged in
-    And I open the "Deleted files" section
-    And I see that the current section is "Deleted files"
-    And I open the "All files" section
-    And I see that the current section is "All files"
-    And I delete "welcome.txt"
-    When I open the "Deleted files" section
-    Then I see that the current section is "Deleted files"
-    Then I see that the file list contains a file named "welcome.txt"
+#  Scenario: show deleted files for a second time
+#    Given I am logged in
+#    And I open the "Deleted files" section
+#    And I see that the current section is "Deleted files"
+#    And I open the "All files" section
+#    And I see that the current section is "All files"
+#    And I delete "welcome.txt"
+#    When I open the "Deleted files" section
+#    Then I see that the current section is "Deleted files"
+#    Then I see that the file list contains a file named "welcome.txt"
 
   Scenario: move a file to another folder
     Given I am logged in
